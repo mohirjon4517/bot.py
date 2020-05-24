@@ -5,16 +5,11 @@ import pyowm
 from pyowm.exceptions import api_response_error 
 from pyowm.exceptions.api_call_error import APICallTimeoutError
 import covid19_data
-from youtube_search import YoutubeSearch
 from google_currency import convert 
 import requests 
 owm = pyowm.OWM('4086f9b16065b2a2a98b558b17aad533', language='ru' )
 TOKEN = "1185243077:AAHyQEh7saCgR0TWRuicqVlmXHrBeTzmVQs"
 bot = telebot.TeleBot(TOKEN)	#create a new Telegram Bot object
-user_num1 = ""
-user_num2 = ""
-user_proc = ''
-user_result = None
 
 @bot.message_handler(commands=['start', 'help'])
 def send_welcome(message):
