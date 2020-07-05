@@ -30,7 +30,6 @@ def mess(message):
 	get_message_bot = message.text.strip().lower()
 	get_message = message.text.strip().lower()
 	if get_message_bot == "uzb🇺🇿":
-		bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAJmLl7JVlN1zKPf5HrmM_H4GzB5NsKQAAIfAANZu_wl6jl0G9k9NpkZBA')
 		markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
 		btn1 = types.KeyboardButton('valyuta💵')
 		btn3 = types.KeyboardButton('ob-havo🌤')
